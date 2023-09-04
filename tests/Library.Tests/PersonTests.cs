@@ -73,7 +73,7 @@ namespace Ucu.Poo.Persons.Tests
 
                 one.IntroduceTo(two);
 
-                Assert.AreEqual(hi, consoleContent.ToString());
+                Assert.AreEqual(hi, consoleContent.ToString().Replace("\r\n", "\n"));
             }
         }
 
